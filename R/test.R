@@ -1,9 +1,8 @@
-#' @useDynLib pointerTest
-
+#' @useDynLib pointerTest, .registration = TRUE
 
 
 getPointer<-function(){
-  .Call("test")
+  .Call(.test)
 }
 
 
